@@ -6,13 +6,31 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		7E8629472D1FCAE4003F219A /* WhisperKit in Frameworks */ = {isa = PBXBuildFile; productRef = 7E8629462D1FCAE4003F219A /* WhisperKit */; };
+		7E86294A2D1FCB06003F219A /* FeedKit in Frameworks */ = {isa = PBXBuildFile; productRef = 7E8629492D1FCB06003F219A /* FeedKit */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		7E1824A82D16867C0070A1A3 /* PodKnows.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PodKnows.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		7E8629442D1FCA8D003F219A /* Exceptions for "PodKnows" folder in "PodKnows" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 7E1824A72D16867C0070A1A3 /* PodKnows */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		7E1824AA2D16867C0070A1A3 /* PodKnows */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				7E8629442D1FCA8D003F219A /* Exceptions for "PodKnows" folder in "PodKnows" target */,
+			);
 			path = PodKnows;
 			sourceTree = "<group>";
 		};
@@ -23,6 +41,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7E8629472D1FCAE4003F219A /* WhisperKit in Frameworks */,
+				7E86294A2D1FCB06003F219A /* FeedKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +85,8 @@
 			);
 			name = PodKnows;
 			packageProductDependencies = (
+				7E8629462D1FCAE4003F219A /* WhisperKit */,
+				7E8629492D1FCB06003F219A /* FeedKit */,
 			);
 			productName = PodKnows;
 			productReference = 7E1824A82D16867C0070A1A3 /* PodKnows.app */;
@@ -94,6 +116,10 @@
 			);
 			mainGroup = 7E18249F2D16867C0070A1A3;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				7E8629452D1FCAE4003F219A /* XCRemoteSwiftPackageReference "WhisperKit" */,
+				7E8629482D1FCB06003F219A /* XCRemoteSwiftPackageReference "FeedKit" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 7E1824A92D16867C0070A1A3 /* Products */;
 			projectDirPath = "";
@@ -255,11 +281,15 @@
 				DEVELOPMENT_TEAM = VWKUKT2732;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = PodKnows/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "懂播客";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.education";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -284,11 +314,15 @@
 				DEVELOPMENT_TEAM = VWKUKT2732;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = PodKnows/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "懂播客";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.education";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -324,6 +358,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		7E8629452D1FCAE4003F219A /* XCRemoteSwiftPackageReference "WhisperKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/argmaxinc/WhisperKit.git";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+		7E8629482D1FCB06003F219A /* XCRemoteSwiftPackageReference "FeedKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/nmdias/FeedKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 9.1.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		7E8629462D1FCAE4003F219A /* WhisperKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7E8629452D1FCAE4003F219A /* XCRemoteSwiftPackageReference "WhisperKit" */;
+			productName = WhisperKit;
+		};
+		7E8629492D1FCB06003F219A /* FeedKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7E8629482D1FCB06003F219A /* XCRemoteSwiftPackageReference "FeedKit" */;
+			productName = FeedKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 7E1824A02D16867C0070A1A3 /* Project object */;
 }
